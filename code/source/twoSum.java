@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-class Solution {
+class twoSum {
 
     public static int[] twoSum(int[] nums, int target) throws Exception {
         Map<Integer, Integer> map = new HashMap<>();
