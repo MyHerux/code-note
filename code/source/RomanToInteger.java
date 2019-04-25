@@ -1,14 +1,29 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class RomanToInteger {
+
     public int romanToInt(String s) {
 
-        String res = "";
-        char roman[] = {'M', 'D', 'C', 'L', 'X', 'V', 'I'};
-        int value[] = {1000, 500, 100, 50, 10, 5, 1};
+        Map<Character, Integer> map = new HashMap<>();
+        map.put('I', 1);
+        map.put('V', 5);
+        map.put('X', 10);
+        map.put('L', 50);
+        map.put('C', 100);
+        map.put('D', 500);
+        map.put('M', 1000);
 
-        for (int i = 0; i < 7; i = i + 2) {
-            int x ;
+        Integer result = 0;
+        for (int i = 0; i < s.length(); i++) {
+            Character c = s.charAt(i);
+            if (i > 0 && map.get(c) > map.get(s.charAt(i - 1))) {
+                result = result + map.get(c) - 2 * map.get(s.charAt(i - 1));
+            } else {
+                result = result + map.get(c);
+            }
         }
 
-        return 0;
+        return result;
     }
 }
