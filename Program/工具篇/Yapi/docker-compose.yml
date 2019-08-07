@@ -1,0 +1,41 @@
+version: '3.7'
+networks:
+  netdci:
+
+services:
+  yapi:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    image: skycitygalaxy/yapi
+    container_name: yapi
+    environment:
+      - VERSION=1.7.1
+      - LOG_PATH=/tmp/yapi.log
+      - HOME=/home
+      - PORT=3000
+      - ADMIN_EMAIL=heroxu123@gmail.com
+      - DB_SERVER=127.0.0.1
+      - DB_NAME=yapi
+      - DB_PORT=27027
+      - DB_USER=xu
+      - DB_PASS=xu
+      - DB_AUTH=test
+    ports:
+      - 127.0.0.1:3000:3000
+    volumes:
+      - ~/data/yapi/log/yapi.log:/home/vendors/log # log dir
+    depends_on:
+      - mongo
+    networks:
+      - netdci
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - 127.0.0.1:27027:27017
+    volumes:
+      - ~/data/yapi/mongodb:/data/db #db dir
+    networks:
+      - netdci
