@@ -6,7 +6,7 @@
        "DATABASE": "MY_DB_NAME",
        "port": "MY_DB_PORT",
        "user": "MY_USER",
-       "pass": "My_PASS",
+       "pass": "MY_PASS",
        "authSource": "MY_AUTH"
     }
  }
