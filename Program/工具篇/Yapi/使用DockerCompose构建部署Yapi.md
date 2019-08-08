@@ -2,6 +2,8 @@
 
 ## OverView
 
+YApi 是一个可本地部署的、打通前后端及QA的、可视化的接口管理平台 https://hellosean1025.github.io/yapi
+
 ## 准备一个自己的 Mongo
 
 因为这些数据都是要落地的，建议单独准备一个DB。
