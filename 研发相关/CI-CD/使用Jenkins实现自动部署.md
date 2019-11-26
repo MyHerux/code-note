@@ -1,12 +1,10 @@
-# 使用Jenkins实现自动部署
-
 ## 创建一个简单的 Pipeline
 
 - 新建任务
 
-    ![](http://cdn.heroxu.com/20190809156532043313763.png)
+    ![](https://imgconvert.csdnimg.cn/aHR0cDovL2Nkbi5oZXJveHUuY29tLzIwMTkwODA5MTU2NTMyMDQzMzEzNzYzLnBuZw)
 
-    ![](http://cdn.heroxu.com/20190809156532048520214.png)
+    ![](https://imgconvert.csdnimg.cn/aHR0cDovL2Nkbi5oZXJveHUuY29tLzIwMTkwODA5MTU2NTMyMDQ4NTIwMjE0LnBuZw)
 
 - 配置一个简单的 Pipeline
 
@@ -33,17 +31,17 @@
     }
     ```
 
-    ![](http://cdn.heroxu.com/20190809156532070971237.png)
+    ![](https://imgconvert.csdnimg.cn/aHR0cDovL2Nkbi5oZXJveHUuY29tLzIwMTkwODA5MTU2NTMyMDcwOTcxMjM3LnBuZw)
 
-    > Pipeline 下面👇的连接 `Pipeline Syntax` 有具体的语法信息，其他语法相关：[Jenkins入门](https://jenkins.io/zh/doc/book/pipeline/syntax/#parameters)。
+    > Pipeline 下面?的连接 `Pipeline Syntax` 有具体的语法信息，其他语法相关：[Jenkins入门](https://jenkins.io/zh/doc/book/pipeline/syntax/#parameters)。
 
 - 构建
 
-    ![](http://cdn.heroxu.com/20190809156532079324660.png)
+    ![](https://imgconvert.csdnimg.cn/aHR0cDovL2Nkbi5oZXJveHUuY29tLzIwMTkwODA5MTU2NTMyMDc5MzI0NjYwLnBuZw)
 
 - 查看Output
 
-    ![](http://cdn.heroxu.com/20190809156532086027509.png)
+    ![](https://imgconvert.csdnimg.cn/aHR0cDovL2Nkbi5oZXJveHUuY29tLzIwMTkwODA5MTU2NTMyMDg2MDI3NTA5LnBuZw)
 
 
 ## 实际使用的 Pipeline
@@ -64,7 +62,7 @@
 
     因为有很多分支，所以分支通过参数来选择。
 
-    ![](http://cdn.heroxu.com/20190809156532338664710.png)
+    ![](https://imgconvert.csdnimg.cn/aHR0cDovL2Nkbi5oZXJveHUuY29tLzIwMTkwODA5MTU2NTMyMzM4NjY0NzEwLnBuZw)
 
 - Stage 2: 测试
 
@@ -109,7 +107,7 @@
     
     打包的 `SpringBoot Jar包` 需要选择不同的环境来编译，所以提供一个环境选择的功能，实际过程：
 
-    ![](http://cdn.heroxu.com/20190809156532385219791.png)
+    ![](https://imgconvert.csdnimg.cn/aHR0cDovL2Nkbi5oZXJveHUuY29tLzIwMTkwODA5MTU2NTMyMzg1MjE5NzkxLnBuZw)
 
 - Stage 4: 推送镜像
 
@@ -139,7 +137,7 @@
 
     使用 `bearychat` 来做通知，部署完成之后将会受到通知消息。
 
-    ![](http://cdn.heroxu.com/20190809156532393621182.png)
+    ![](https://imgconvert.csdnimg.cn/aHR0cDovL2Nkbi5oZXJveHUuY29tLzIwMTkwODA5MTU2NTMyMzkzNjIxMTgyLnBuZw)
 
     接入教程：使用 `bearychat机器人` 直接搜索 `Jenkins`。
 
@@ -200,5 +198,5 @@
 
 - 执行结果
 
-    ![](http://cdn.heroxu.com/2019080915653240353453.png)
+    ![](https://imgconvert.csdnimg.cn/aHR0cDovL2Nkbi5oZXJveHUuY29tLzIwMTkwODA5MTU2NTMyNDAzNTM0NTMucG5n)
 
