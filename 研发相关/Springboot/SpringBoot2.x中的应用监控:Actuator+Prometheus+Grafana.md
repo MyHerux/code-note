@@ -32,7 +32,7 @@
 
 ### 架构图
 
-![](http://of0qa2hzs.bkt.clouddn.com/20180611152870866231216.png)
+![](http://cdn.heroxu.com/20180611152870866231216.png)
 
 ### 集成到应用
 
@@ -119,7 +119,7 @@
 
     - 访问 9090 端口
 
-        ![](http://of0qa2hzs.bkt.clouddn.com/20180612152879174729237.png)
+        ![](http://cdn.heroxu.com/20180612152879174729237.png)
 
 ## Grafana
 
@@ -140,19 +140,19 @@ analytics and monitoring.
 
     访问 `http://127.0.0.1:3000/`（默认账号密码是 `admin/admin` ）：
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180612152880672344532.png)
+    ![](http://cdn.heroxu.com/20180612152880672344532.png)
 
 - 配置 Prometheus 数据源
 
     URL填入 Prometheus 服务的地址：
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180612152880725293179.png)
+    ![](http://cdn.heroxu.com/20180612152880725293179.png)
 
 - 添加 Dashboards
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/2018061215288088143797.png)
+    ![](http://cdn.heroxu.com/2018061215288088143797.png)
 
 - 查看监控页面
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180612152880910476496.png)
+    ![](http://cdn.heroxu.com/20180612152880910476496.png)
 

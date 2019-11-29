@@ -57,7 +57,7 @@
 
         Swagger-ui上的展示：
 
-        ![](http://of0qa2hzs.bkt.clouddn.com/20180606152827449623722.png)
+        ![](http://cdn.heroxu.com/20180606152827449623722.png)
 
     - `ApiResponse` 
     

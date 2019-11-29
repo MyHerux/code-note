@@ -30,7 +30,7 @@ Pete想做一个Dapp来卖他的宠物。
 
 - 项目目录结构
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180517152655251941578.png)
+    ![](http://cdn.heroxu.com/20180517152655251941578.png)
 
     - `contracts/`: 智能合约的文件夹，所有的智能合约文件都放置在这里，里面包含一个重要的合约 `Migrations.sol`。
 

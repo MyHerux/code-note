@@ -32,7 +32,7 @@
 
     服务启动后访问： http://localhost:8080 就可以看到IDE了。
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180515152636521395163.png)
+    ![](http://cdn.heroxu.com/20180515152636521395163.png)
 
 ## Remix的使用
 
@@ -40,7 +40,7 @@
 
     Ide有一个默认的投票的合约，现在创建一个更简单的示例合约。
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180515152636542078931.png)
+    ![](http://cdn.heroxu.com/20180515152636542078931.png)
 
 - 新合约
 
@@ -71,7 +71,7 @@
 
     点击编译，或者勾选自动编译（每次修改之后会自动编译），下面会出现编译好的合约。
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180515152636593745989.png)
+    ![](http://cdn.heroxu.com/20180515152636593745989.png)
 
 - 部署合约
 
@@ -82,37 +82,37 @@
     - Gas limit是调用合约所准备的gas。
     - value 是我们可以给合约账户转账的金额。
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180515152636620276604.png)
+    ![](http://cdn.heroxu.com/20180515152636620276604.png)
 
 - 选择测试网络
 
     - 直接发布的合约会直接放到主网（main network）上：
 
-        ![](http://of0qa2hzs.bkt.clouddn.com/20180515152636674691311.png)
+        ![](http://cdn.heroxu.com/20180515152636674691311.png)
 
     - 发布到主网的合约都需要支付Eth，所以修改MetaMask的网络，选择测试网络：
 
-        ![](http://of0qa2hzs.bkt.clouddn.com/20180515152636684669880.png)
+        ![](http://cdn.heroxu.com/20180515152636684669880.png)
 
     - 测试网络点击buy可以申请测试用的Eth：
 
-        ![](http://of0qa2hzs.bkt.clouddn.com/20180515152636976398544.png)
+        ![](http://cdn.heroxu.com/20180515152636976398544.png)
 
 - 支付Eth，提交合约
 
     申请到测试用的Eth之后就可以提交合约了：
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180515152636985213983.png)
+    ![](http://cdn.heroxu.com/20180515152636985213983.png)
 
 - 查看区块链上的合约
 
     - 点击合约的交易记录查看合约信息：
 
-        ![](http://of0qa2hzs.bkt.clouddn.com/20180515152636999213084.png)
+        ![](http://cdn.heroxu.com/20180515152636999213084.png)
 
     - 区块链上的合约信息：
 
-        ![](http://of0qa2hzs.bkt.clouddn.com/20180515152637008071090.png)
+        ![](http://cdn.heroxu.com/20180515152637008071090.png)
 
 ## 发行TOKEN
 
@@ -156,17 +156,17 @@
 
     - 填入需要发行的币：100000个，部署合约：
 
-        ![](http://of0qa2hzs.bkt.clouddn.com/20180515152637156174485.png)
+        ![](http://cdn.heroxu.com/20180515152637156174485.png)
 
     - 查看合约内容
 
         `Remix` 会自动根据合约的內容，产生对应的合约使用界面。可以看到合约有两个功能：`balanceOf`(查询余额) 和 `transfer`(转移代币)。
 
-        ![](http://of0qa2hzs.bkt.clouddn.com/20180515152637209747548.png)
+        ![](http://cdn.heroxu.com/20180515152637209747548.png)
 
 - 执行合约
 
     查看我账号上的代币余额：
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180515152637221843132.png)
+    ![](http://cdn.heroxu.com/20180515152637221843132.png)
 

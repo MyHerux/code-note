@@ -14,7 +14,7 @@
 
 - 工程结构
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180517152652531971684.png)
+    ![](http://cdn.heroxu.com/20180517152652531971684.png)
 
 - 集成 `OpenZeppelin`
 
@@ -23,7 +23,7 @@
     ```
     安装完成之后可以在npm包中看到最新版本的OpenZeppelin：
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/201805171526525843950.png)
+    ![](http://cdn.heroxu.com/201805171526525843950.png)
 
 ## 创建TutorialToken智能合约
 
@@ -101,11 +101,11 @@
     truffle migrate
     ```
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180517152652965323652.png)
+    ![](http://cdn.heroxu.com/20180517152652965323652.png)
 
     在Ganache上查看交易详情：
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180517152652981939829.png)
+    ![](http://cdn.heroxu.com/20180517152652981939829.png)
     
 ## 与新token交互 
 
@@ -119,26 +119,26 @@
     npm run dev
     ```
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180517152654075345506.png)
+    ![](http://cdn.heroxu.com/20180517152654075345506.png)
 
 - 切换 `MetaMask` 到本地网络
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180517152654108186265.png)
+    ![](http://cdn.heroxu.com/20180517152654108186265.png)
 
 - 用私钥导入本地账户
 
     导入本地环境的第一个账户（Ganache默认使用的第一个账户）
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180517152654128324674.png)
+    ![](http://cdn.heroxu.com/20180517152654128324674.png)
 
 - 刷新页面，查看代币
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180517152654376555130.png)
+    ![](http://cdn.heroxu.com/20180517152654376555130.png)
 
 - 给第二个账户转2000代币
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180517152654395675531.png)
+    ![](http://cdn.heroxu.com/20180517152654395675531.png)
 
 - 切换到第二个账户，刷新页面，查看token
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180517152654414191368.png)
+    ![](http://cdn.heroxu.com/20180517152654414191368.png)

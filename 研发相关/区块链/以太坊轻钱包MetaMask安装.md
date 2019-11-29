@@ -20,9 +20,9 @@
 
     - 进入官网，下载插件（需翻墙）
 
-        ![](http://of0qa2hzs.bkt.clouddn.com/20180514152628068830902.png)
+        ![](http://cdn.heroxu.com/20180514152628068830902.png)
 
-        ![](http://of0qa2hzs.bkt.clouddn.com/20180514152628090473344.png)
+        ![](http://cdn.heroxu.com/20180514152628090473344.png)
 
 ## MetaMask使用
 
@@ -32,27 +32,27 @@
     
     > 当登录到MetaMask之后，你的账户对你访问的所有网站都是可见的，为了你的隐私，在使用完MetaMask之后最好退出登录。
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180514152628115611863.png)
+    ![](http://cdn.heroxu.com/20180514152628115611863.png)
 
 - 服务条款
 
     需要下滑阅读全文。
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180514152628135552855.png)
+    ![](http://cdn.heroxu.com/20180514152628135552855.png)
 
 - `DEN` 登录
 
     导入`DEN`（`DEN` 是在 `MetaMask` 用密码加密存储的钱包）：
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180514152628152028571.png)
+    ![](http://cdn.heroxu.com/20180514152628152028571.png)
 
 - 创建新 `DEN`
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180514152628251553894.png)
+    ![](http://cdn.heroxu.com/20180514152628251553894.png)
 
     MetaMask会为用户创建12个英文助记词，一定要保存好这些助记词：
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180514152628271225430.png)
+    ![](http://cdn.heroxu.com/20180514152628271225430.png)
 
 - 进入钱包
 
@@ -66,11 +66,11 @@
     
     - 第四项是导出钱包的私钥（秘钥要保存好，不可丢失或告诉他人）。
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180514152628291845705.png)
+    ![](http://cdn.heroxu.com/20180514152628291845705.png)
 
 - 选择 `Ethereum` 网络（默认主网）
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180514152628318377433.png)
+    ![](http://cdn.heroxu.com/20180514152628318377433.png)
 
 ## Eth交易
 
@@ -82,10 +82,10 @@
 
     - ShapeShift，是一个无需帐户的数字货币兑换平台，可以将你自己的虚拟货币直接兑换为Eth。
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180514152628331877663.png)
+    ![](http://cdn.heroxu.com/20180514152628331877663.png)
 
 - 发送Eth
 
     分别填写 `发送地址`、`金额`、`附加信息`。
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180514152628347636318.png)
+    ![](http://cdn.heroxu.com/20180514152628347636318.png)

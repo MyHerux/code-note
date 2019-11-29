@@ -100,7 +100,7 @@
 
     访问 `http://localhost:8080//actuator/metrics/` 可以看到新增了我们添加的指标名称 `my_job`
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180817153449776998953.png)
+    ![](http://cdn.heroxu.com/20180817153449776998953.png)
 
     进入下一级目录：`http://localhost:8080//actuator/metrics/my_job` ，可以看到总的执行次数是 `602` ，有两种不同的 `tag`
 

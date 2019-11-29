@@ -36,7 +36,7 @@
 
     工程结构如图：
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180516152645842074616.png)
+    ![](http://cdn.heroxu.com/20180516152645842074616.png)
 
     - `contracts` 目录中包含 `Solidity` 合约代码，其中 `Migrations.sol` 是必须的，其他的是合约代码（这里是示例的 `MetaCoin` 代码）。
 
@@ -101,7 +101,7 @@
 
 - `Ganache` 默认运行在本地 `7545` 端口，运行后默认创建10个账号，每个账号里有100ETH的余额。
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/201805161526461060219.png)
+    ![](http://cdn.heroxu.com/201805161526461060219.png)
 
 - 修改truffle.js
 
@@ -162,7 +162,7 @@
 
     结果显示5个测试都通过：
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180516152646197069199.png)
+    ![](http://cdn.heroxu.com/20180516152646197069199.png)
 
 - Ganache
 
@@ -176,4 +176,4 @@
 
     - Logs标签：显示交易和挖矿日志
 
-    ![](http://of0qa2hzs.bkt.clouddn.com/20180516152646230427177.png)
+    ![](http://cdn.heroxu.com/20180516152646230427177.png)

@@ -209,7 +209,7 @@
 
     - 外网浏览器访问：外网IP:5601
 
-        ![](http://of0qa2hzs.bkt.clouddn.com/20180511152600954252933.png)
+        ![](http://cdn.heroxu.com/20180511152600954252933.png)
 
 ## 配置ELK
 
@@ -306,10 +306,10 @@
 
     - 配置索引，使用 `-*` 通配符进行批量匹配
     
-        ![](http://of0qa2hzs.bkt.clouddn.com/20180511152601517798487.png)
+        ![](http://cdn.heroxu.com/20180511152601517798487.png)
 
-        ![](http://of0qa2hzs.bkt.clouddn.com/20180511152601520912193.png)
+        ![](http://cdn.heroxu.com/20180511152601520912193.png)
 
     - 配置成功后点击 `Discover` 即可查看日志
     
-        ![](http://of0qa2hzs.bkt.clouddn.com/20180511152601539511837.png)
+        ![](http://cdn.heroxu.com/20180511152601539511837.png)
