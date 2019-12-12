@@ -193,3 +193,7 @@ docker.io/openzipkin/zipkin
 点击具体的服务，可以看到服务调用的详情以及父级子级 `trace`
 
 ![20191211175127](http://cdn.heroxu.com/20191211175127.png)
+
+## 项目地址
+
+[zipkin-demo](https://github.com/MyHerux/zipkin-demo)
