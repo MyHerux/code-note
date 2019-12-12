@@ -4,7 +4,7 @@
 
 `CAP` 原则又称 `CAP` 定理，指的是在一个分布式系统中， `Consistency`（一致性）、`Availability`（可用性）、`Partition tolerance`（分区容错性），三者不可得兼，最多只能同时满足其中的 `2` 个。
 
-图
+![20191212103254](http://cdn.heroxu.com/20191212103254.png)
 
 - 一致性（`Consistency`）
 
@@ -20,7 +20,43 @@
 
 ## CAP原则论证
 
+#### 基本场景
+
+在一个CAP的基本场景中，网络中有两个节点N1和N2，可以简单的理解N1和N2分别是两台计算机，他们之间网络可以连通，N1中有一个应用程序A，和一个数据库V，N2也有一个应用程序B2和一个数据库V。现在，A和B是分布式系统的两个部分，V是分布式系统的数据存储的两个子数据库。
+
+![20191212110038](http://cdn.heroxu.com/20191212110038.png)
+
+- 在满足一致性的时候，N1和N2中的数据是一样的，V0=V0。
+- 在满足可用性的时候，用户不管是请求N1或者N2，都会得到立即响应。
+- 在满足分区容错性的情况下，N1和N2有任何一方宕机，或者网络不通的时候，都不会影响N1和N2彼此之间的正常运作。
+
+#### 网络正常运行，实际上同时满足CAP
+
+![20191212111643](http://cdn.heroxu.com/20191212111643.png)
+
+用户向N1机器请求数据更新，程序A更新数据库V0为V1。分布式系统将数据进行同步操作M，将V1同步的N2中V0，使得N2中的数据V0也更新为V1，N2中的数据再响应N2的请求。
+
+- 一致性：N1和N2的数据库V之间的数据是否完全一样。
+- 可用性：N1和N2的对外部的请求能否做出正常的响应。
+- 分区容错性：N1和N2之间的网络是否互通。
+
+#### 网络异常，CAP只能同时满足其中2个
+
+![20191212111844](http://cdn.heroxu.com/20191212111844.png)
+
+假设在N1和N2之间网络断开的时候，有用户向N1发送数据更新请求，那N1中的数据V0将被更新为V1。由于网络是断开的，所以分布式系统同步操作M，所以N2中的数据依旧是V0。这个时候，有用户向N2发送数据读取请求，由于数据还没有进行同步，应用程序没办法立即给用户返回最新的数据V1，怎么办呢？
+这里有两种选择：
+
+- 第一：牺牲数据一致性，保证可用性。响应旧的数据V0给用户。
+- 第二：牺牲可用性，保证数据一致性。阻塞等待，直到网络连接恢复，数据更新操作M完成之后，再给用户响应最新的数据V1。
+
+#### 总结
+
+实际上，对于分布式系统来说，并不是 `CAP` 只能同时满足其中的 `2` 个，而是当网络出现问题时：因为 `P` 必须满足，所以只能再 `A` 和 `C` 中二选一。
+
 ## 取舍策略
+
+因为 `CAP` 最多只能同时满足其中的 `2` 个，所以不得不做个取舍。
 
 - CA without P
 
@@ -36,3 +72,35 @@
 
 ## 主流分布式系统是如何选择的
 
+|            | Eureka | Consul | Zookeeper            | Nacos | Etcd |
+| ---------- | ------ | ------ | -------------------- | ----- | ---- |
+| CAP        | AP     | CP     | CP                   | AP/CP   | CP   |
+| 一致性算法 | 无     | Raft   | ZAB（类 PAXOS 协议） | Raft  | Raft |
+
+对于`AP` 来说实际上，不用关心一致性算法，所以 `Eureka` 中没有使用任何的数据强一致性算法保证不同集群间的 `Server` 的数据一致，仅通过数据拷贝的方式争取注册中心数据的最终一致性。
+
+而像 `Zookeeper` 这种分布式协调组件，数据的一致性是他们最最基本的要求。所以在极端环境下， `ZooKeeper` 可能会丢弃一些请求，消费者程序需要重新请求才能获得结果，也要保证数据一致性。
+
+对于 `Nacos` 来说，实现 `AP` 的同时，也使用了一致性算法 `Raft` ，[Nacos 是如何同时实现AP与CP的](https://www.liaochuntao.cn/2019/06/01/java-web-41/)。
+
+## 延伸阅读
+
+对于一个分布式系统来说。 `P` 是一个基本要求， `CAP` 三者中，只能在 `CA` 两者之间做权衡，并且要想尽办法提升 `P` 。
+某些情况下，`AP` 与 `CP` 的选择，可以看下这些公司是如何选择的：
+
+- [Eureka! Why You Shouldn’t Use ZooKeeper for Service Discovery](https://medium.com/knerd/eureka-why-you-shouldnt-use-zookeeper-for-service-discovery-4932c5c7e764)
+
+- [阿里巴巴为什么不用 ZooKeeper 做服务发现？](http://jm.taobao.org/2018/06/13/%E5%81%9A%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0%EF%BC%9F/)
+
+
+## 参考
+
+- [CAP原则(CAP定理)、BASE理论](https://www.cnblogs.com/duanxz/p/5229352.html)
+
+- [CAP Theorem: Revisited](https://robertgreiner.com/cap-theorem-revisited/)
+
+- [An Illustrated Proof of the CAP Theorem](https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/)
+
+- [CAP 定理的含义](https://www.ruanyifeng.com/blog/2018/07/cap.html)
+
+- [分布式系统的CAP理论](https://www.hollischuang.com/archives/666)
