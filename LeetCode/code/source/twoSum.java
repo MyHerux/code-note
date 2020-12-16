@@ -18,8 +18,9 @@ class twoSum {
     }
 
     public static void main(String[] args) throws Exception {
-        int nums[] = {2, 7, 11, 15};
+        int nums[] = {1,2, 7, 11, 15};
         int result[] = twoSum(nums, 9);
+        System.out.println(result[0]+","+result[1]);
     }
 
 }
