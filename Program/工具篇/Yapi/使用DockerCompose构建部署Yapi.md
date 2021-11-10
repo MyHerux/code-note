@@ -15,7 +15,7 @@ YApi 是一个可本地部署的、打通前后端及QA的、可视化的接口�
 - 下载 Yapi
 
     ```
-    ./download.sh 1.8.1
+    ./download.sh 1.9.3
     ```
 
 - 构建镜像
@@ -27,24 +27,24 @@ YApi 是一个可本地部署的、打通前后端及QA的、可视化的接口�
 - Push 镜像
 
     ```
-    docker tag skycitygalaxy/yapi:latest skycitygalaxy/yapi:v7
-    docker push skycitygalaxy/yapi:v7
+    docker tag skycitygalaxy/yapi:latest skycitygalaxy/yapi:v1.9.3
+    docker push skycitygalaxy/yapi:v1.9.3
     ```
 
 ## 直接使用镜像，本地部署
 
-如果不想自己构建镜像的话，可以使用我打包好的镜像：skycitygalaxy/yapi:v7
+如果不想自己构建镜像的话，可以使用我打包好的镜像：skycitygalaxy/yapi:v1.9.3
 
 - 拉取镜像
 
     ```
-    docker pull skycitygalaxy/yapi:v7
+    docker pull skycitygalaxy/yapi:v1.9.3
     ```
 
 - 启动服务
 
     ```
-    docker run -d -p 3001:3000 --name yapi skycitygalaxy/yapi:v7
+    docker run -d -p 3001:3000 --name yapi skycitygalaxy/yapi:v1.9.3
     ```
 
 - 修改配置
