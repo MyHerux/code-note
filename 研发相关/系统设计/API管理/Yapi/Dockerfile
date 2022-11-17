@@ -2,7 +2,7 @@ FROM node:11 as builder
 
 RUN apt-get install -y  git python make openssl tar gcc
 ADD yapi.tgz /home/
-RUN mkdir /api && mv /home/package /api/vendors
+RUN mkdir /api && mv /home/yapi-1.12.0 /api/vendors
 RUN cd /api/vendors && \
     npm install --production --registry https://registry.npm.taobao.org
 

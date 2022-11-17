@@ -18,4 +18,4 @@ usage
 
 echo -e "\033[32m download new package (version $version) \033[0m"
 
-wget -O yapi.tgz http://registry.npm.taobao.org/yapi-vendor/download/yapi-vendor-$version.tgz
+wget -O yapi.tgz http://registry.npm.taobao.org/yapi-vendor/download/yapi-vendor-$version.tgz --no-check-certificate
